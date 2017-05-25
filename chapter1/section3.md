@@ -48,15 +48,37 @@ initialize 方法是一种特殊类型的方法，将在调用带参数的类的
 
 class Customer
 
-   @@no\_of\_customers=0
+@@no\_of\_customers=0
 
-   def initialize\(id, name, addr\)
+def initialize\(id, name, addr\)
 
-      @cust\_id=id
+```
+  @cust\_id=id
 
-      @cust\_name=name
+  @cust\_name=name
 
-      @cust\_addr=addr
+  @cust\_addr=addr
+```
+
+end
+
+end
+
+Ruby 类中的成员函数
+
+在 Ruby 中，函数被称为方法。类中的每个方法是以关键字 def 开始，后跟方法名。
+
+方法名总是以小写字母开头。在 Ruby 中，您可以使用关键字 end 来结束一个方法。
+
+下面的实例定义了一个 Ruby 方法：
+
+class Sample
+
+   def function
+
+      statement 1
+
+      statement 2
 
    end
 
