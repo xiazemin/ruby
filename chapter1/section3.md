@@ -34,3 +34,31 @@ cust1 = Customer. new
 
 cust2 = Customer. new
 
+自定义方法来创建 Ruby 对象
+
+您可以给方法 new 传递参数，这些参数可用于初始化类变量。
+
+当您想要声明带参数的 new 方法时，您需要在创建类的同时声明方法 initialize。
+
+initialize 方法是一种特殊类型的方法，将在调用带参数的类的 new 方法时执行。
+
+下面的实例创建了 initialize 方法：
+
+实例
+
+class Customer
+
+   @@no\_of\_customers=0
+
+   def initialize\(id, name, addr\)
+
+      @cust\_id=id
+
+      @cust\_name=name
+
+      @cust\_addr=addr
+
+   end
+
+end
+
