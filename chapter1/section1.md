@@ -6,21 +6,13 @@
 
 \#!/usr/bin/ruby -w
 
- 
-
 puts "Hello, Ruby!";
-
-
 
 运行实例 »
 
 在这里，假设您的 /usr/bin 目录下已经有可用的 Ruby 解释器。现在，尝试运行这个程序，如下所示：
 
 $ ruby test.rb
-
-这将会产生下面的结果：
-
-Hello, Ruby!
 
 
 
