@@ -22,11 +22,11 @@ Ruby 中的每个方法默认都会返回一个值。这个返回的值是最后
 
 def test
 
-   i = 100
+i = 100
 
-   j = 10
+j = 10
 
-   k = 0
+k = 0
 
 end
 
@@ -41,4 +41,34 @@ Ruby 中的 return 语句用于从 Ruby 方法中返回一个或多个值。
 return \[expr\[\`,' expr...\]\]
 
 如果给出超过两个的表达式，包含这些值的数组将是返回值。如果未给出表达式，nil 将是返回值。
+
+可变数量的参数
+
+假设您声明了一个带有两个参数的方法，当您调用该方法时，您同时还需要传递两个参数。
+
+但是，Ruby 允许您声明参数数量可变的方法。让我们看看下面的实例：
+
+实例
+
+\#!/usr/bin/ruby
+
+\# -\*- coding: UTF-8 -\*-
+
+ 
+
+def sample \(\*test\)
+
+   puts "参数个数为 \#{test.length}"
+
+   for i in 0...test.length
+
+      puts "参数值为 \#{test\[i\]}"
+
+   end
+
+end
+
+sample "Zara", "6", "F"
+
+sample "Mac", "36", "M", "MCA"
 
