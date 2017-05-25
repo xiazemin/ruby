@@ -1,7 +1,5 @@
 # Ruby块
 
-
-
 块由大量的代码组成。
 
 您需要给块取个名称。
@@ -16,13 +14,37 @@
 
 block\_name{
 
-   statement1
+statement1
 
-   statement2
+statement2
 
-   ..........
+..........
 
 }
 
-在这里，
+yield 语句
+
+让我们看一个 yield 语句的实例：
+
+实例
+
+\#!/usr/bin/ruby
+
+\# -\*- coding: UTF-8 -\*-
+
+ 
+
+def test
+
+   puts "在 test 方法内"
+
+   yield
+
+   puts "你又回到了 test 方法内"
+
+   yield
+
+end
+
+test {puts "你在块内"}
 
